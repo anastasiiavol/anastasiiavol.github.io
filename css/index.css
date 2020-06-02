@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Titillium Web', sans-serif;
+    src: url("../fonts/TitilliumWeb-Regular.ttf"); /* Путь к файлу со шрифтом */
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body{
+    font-size: 20px;
+    color: #333;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+a {
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    color: black;
+}
+.container {
+    width: 90%;
+    max-width: 1180px;
+    background-color: white;
+    margin: 0 auto;
+    height: auto;
+}
+
+.question{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.answers {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+}
+.answers label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    background-color: #444444;
+}
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.active-slide{
+    opacity: 1;
+    z-index: 2;
+}
+.quiz-container{
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
+}
+
+header {
+    overflow: hidden;
+    background-color: black;
+    height: 12vh;
+
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+header a {
+    float: left;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+
+}
+header img{
+    width: 50px;
+    height:auto;
+}
+header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+header span:hover {
+    background-color: #f8f6f0;
+    color: black;
+}
+
+header a.active {
+
+    background-color: #cccac5;
+    color: white;
+}
+
+.header-right {
+    padding: 20px 10px;
+    float: right;
+    text-transform: uppercase;
+}
+
+.banner{
+    height: 88vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.banner__img{
+    width: 100%;
+    height: auto;
+}
+
+.banner__text{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.65);
+}
+.section_test__area_text{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 150%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.65);
+}
+.section_test{
+    background: linear-gradient(145deg, #dddddd, #ffffff);
+    height: 100vh;
+}
+
+.section_test__area{
+    background: linear-gradient(145deg, #dddddd, #ffffff);
+    display: flex;
+    flex-direction: column;
+}
+.section_test__area_blocks{
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+}
+hr{
+   height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray;
+}
+.section_test__area_block{
+    width: 15vw;
+    height: 350px;
+    border-radius: 24px;
+    background: linear-gradient(145deg, #dddddd, #ffffff);
+    box-shadow:  27px 27px 54px #d5d5d5,
+    -27px -27px 54px #ffffff;
+    margin: 0px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_test__area_block:hover{
+    -webkit-box-shadow: 0px 24px 41px 0px rgba(158,158,158,0.73);
+    -moz-box-shadow: 0px 24px 41px 0px rgba(158,158,158,0.73);
+    box-shadow: 0px 24px 41px 0px rgba(158,158,158,0.73);
+}
+.section_test__area_icon img{
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+    filter: drop-shadow(0 0 3px rgba(100,0,0,0.5));
+}
+.section_test__area_block_title div{
+    margin-top: 45px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(28, 28, 28, 0.76);
+}
+.section_test__area_block_title button{
+    font-size: 22px;
+    color: white;
+    background-color: black;
+    border: 0px;
+
+    border-radius: 3px;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    margin-top:60px;
+}
+footer{
+    height: 15vh;
+    background-color: black;
+}
+footer .footer__section{
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    color: #afafaf;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+}
