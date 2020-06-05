@@ -1,4 +1,3 @@
-
 let quiz;
 
 function showResults() {
@@ -44,17 +43,14 @@ function handleAnswers(quiz, question, no, correct) {
     }
 }
 
+
+
 window.onload = function() {
     quiz = new Quiz('quiz', [
-        'Hyper Text Markup Language',
-        'br',
-        'strong',
-        'a',
+        'script',
         'b',
         'a',
-        ['a', 'b']
+
     ]);
 };
-
-
 

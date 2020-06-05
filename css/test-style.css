@@ -116,12 +116,19 @@ button:active {
 #footer form {
     margin-top: 2px;
 }
+.container{
+    background-color: #ffe8fb;
+}
+
+h2{
+    padding-top: 25px;
+}
 
 #dhtmlgoodies_dragDropContainer { /* Main container for this script */
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+padding-top: 20px;
     background-color: #ffe8fb;
     -moz-user-select: none;
 }

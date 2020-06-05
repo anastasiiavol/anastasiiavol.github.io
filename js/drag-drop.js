@@ -356,3 +356,7 @@ function initDragDropScript()
 }
 
 window.onload = initDragDropScript;
+
+
+
+
