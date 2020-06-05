@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestMe HTML</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/test-style.css">
+    <script src="js/test-script.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="build/quizlib.1.0.1.min.js"></script>
+</head>
+<body>
+<header>
+
+    <a href="index.html" class="logo">TestMe
+        <img src="img/cat.svg"></a>
+    <div class="header-right">
+        <a href="index.html">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
+</header>
+<div class="section_test" id="testSection">
+
+    <div class="container">
+
+        <div id="quiz-result" class="card">
+            You Scored <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+        </div>
+
+
+        <div id="quiz" class="test_container">
+            <h2>HTML Test</h2>
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1.What is HTML?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q1">
+                </div>
+            </div>
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2.What is the correct HTML element for inserting a line break?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q2">
+                </div>
+            </div>
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">3.Choose the correct HTML element to define important text?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q3">
+                </div>
+            </div>
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">4. Choose the correct HTML element for the largest heading:</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q4" value="a"> &lth1&gt </label></li>
+                        <li><label><input type="radio" name="q4" value="b"> &lth6&gt</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">5. How can you make a numbered list?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q5" value="a"> &ltul&gt </label></li>
+                        <li><label><input type="radio" name="q5" value="b"> &ltol&gt</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">6. How can you open a link in a new tab/browser window?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q6" value="a"> &l href = "url" target = "_blank"&gt </label></li>
+                        <li><label><input type="radio" name="q6" value="b"> &l href = "url" target = "new"&gt</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">7. What is better to use with HTML?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="checkbox" name="q7" value="a"> CSS</label></li>
+                        <li><label><input type="checkbox" name="q7" value="b"> JavaScript</label></li>
+                        <li><label><input type="checkbox" name="q7" value="c"> Assembly code</label></li>
+                        <li><label><input type="checkbox" name="q7" value="d"> C++</label></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Answer Button -->
+            <button type="button" onclick="showResults();">Check Answers</button> <br>
+            <button type="button" onclick="print();">Print Test</button>
+        </div>
+        </div>
+
+
+        </div>
+
+    </div>
+</div>
+<footer>
+    <div class="footer__section">
+        <span>TestMe</span>
+        <span>© 2020 Volchanska Anastasia </span>
+    </div>
+
+</footer>
+</body>
+</html>

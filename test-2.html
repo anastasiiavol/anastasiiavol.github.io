@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestMe HTML</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/test-style.css">
+    <script src="js/test-script-mult.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="build/quizlib.1.0.1.min.js"></script>
+</head>
+<body>
+<header>
+
+    <a href="index.html" class="logo">TestMe
+        <img src="img/cat.svg"></a>
+    <div class="header-right">
+        <a href="index.html">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
+</header>
+<div class="section_test" id="testSection">
+
+    <div class="container" >
+
+        <!-- CSS Results -->
+        <!-- For this multi quiz, we'll use the same result element and move it to active quiz when the answer button is pressed. -->
+        <div id="quiz-result" class="card">
+            You Scored <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+        </div>
+
+        <!-- CSS 1 -->
+        <div id="quiz-1" class="test_container-mult">
+            <h2 class="first-title">CSS 1 Part</h2>
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. What does CSS stand for?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q1">
+                </div>
+            </div>
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. What is the origin of CSS?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q2">
+                </div>
+            </div>
+
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">3. What are the different variations of CSS?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q3" value="a"> CSS3</label></li>
+                        <li><label><input type="radio" name="q3" value="b"> CSS5</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">4. How can you integrate CSS on a web page?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q4" value="a"> Linked/Imported/External method </label></li>
+                        <li><label><input type="radio" name="q4" value="b"> Another method </label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">5. Name some CSS style components?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="checkbox" name="q5" value="a"> Class</label></li>
+                        <li><label><input type="checkbox" name="q5" value="b"> Selector</label></li>
+                        <li><label><input type="checkbox" name="q5" value="c"> Property</label></li>
+                        <li><label><input type="checkbox" name="q5" value="d"> Value</label></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div>
+
+
+        <!-- CSS 2 -->
+        <div id="quiz-2" class="test_container-mult">
+            <h2>CSS 2 Part</h2>
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. Explain universal selector.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q1" value="a"> The universal selector  is used for selecting all the elements of a paragraph.</label></li>
+                        <li><label><input type="radio" name="q1" value="b"> The universal selector matches the name of any of the element type instead of selecting elements of a specific type.</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. What is the difference between class selectors and id selectors?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q2" value="a"> An overall block is given to class selector while id selectors take only a single element differing from other elements.</label></li>
+                        <li><label><input type="radio" name="q2" value="b">An overall block is given to id selector while class selectors take only a single element differing from other elements.</label></li>
+                        <li><label><input type="radio" name="q2" value="c"> An overall block is given to class selector while id selectors take several elements differing from other elements.</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">3. What is tweening?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="checkbox" name="q3" value="a"> It is the process of generating intermediate frames between two images.</label></li>
+                        <li><label><input type="checkbox" name="q3" value="b"> It gives the impression that the first image has smoothly evolved into the second one.</label></li>
+                        <li><label><input type="checkbox" name="q3" value="c"> It is an important method used in all types of animations.</label></li>
+                        <li><label><input type="checkbox" name="q3" value="d"> In CSS3, Transforms (matrix, translate, rotate, scale) module can not be used to achieve tweening.</label></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Answer Button. Note that the showResults call is exactly the same as question 1. Nice!  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div>
+
+
+        <!-- CSS 3 -->
+        <div id="quiz-3" class="test_container-mult">
+            <h2>CSS 3 Part</h2>
+            <!-- Question 1 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. Name the property for controlling the image repetition of the background.</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q1">
+                </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. What are the advantages of CSS?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q2" value="a"> Bandwidth</label></li>
+                        <li><label><input type="radio" name="q2" value="b"> Site-wide consistency</label></li>
+                        <li><label><input type="radio" name="q2" value="c"> Page reformatting</label></li>
+                        <li><label><input type="radio" name="q2" value="d"> Accessibility</label></li>
+                        <li><label><input type="radio" name="q2" value="e"> Content does not separated from presentation</label></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Answer Button. Note that the showResults call is exactly the same as question 1. Nice!  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button> <br>
+            <button type="button" onclick="print();">Print Test</button>
+
+
+    </div>
+
+</div>
+</div>
+<footer>
+    <div class="footer__section">
+        <span>TestMe</span>
+        <span>© 2020 Volchanska Anastasia </span>
+    </div>
+
+</footer>
+</body>
+</html>

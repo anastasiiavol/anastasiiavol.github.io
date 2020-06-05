@@ -1,0 +1,275 @@
+
+.card {
+    padding: 8px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    line-height: 2rem;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+.test_container {
+    border-left: 1px solid #ffd5f2;
+    border-right: 1px solid #ffd5f2;
+
+    background-color: #ffe8fb;
+    padding: 30px;
+}
+
+.test_container-mult {
+    border-left: 1px solid #ffd5f2;
+    border-right: 1px solid #ffd5f2;
+
+    background-color: #ffe8fb;
+}
+
+.first-title {
+    padding-top: 30px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+#quiz-result {
+    display: none;
+
+
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+input[type="text"] {
+    margin-left: 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 12px;
+
+    cursor: pointer;
+
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 16px;
+    color: #fff;
+
+    background-color: black;
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.76);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.76);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.76);
+}
+
+button:active {
+    -webkit-box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn_check {
+    margin-top: 10px;
+}
+
+#quiz-result {
+    margin-bottom: 0px;
+}
+
+.quizlib-question-warning {
+    color: red;
+}
+
+.quizlib-question-title {
+    padding-bottom: 5px
+}
+
+#footer {
+    height: 30px;
+    vertical-align: middle;
+    text-align: right;
+    clear: both;
+    padding-right: 3px;
+    background-color: rgba(125, 125, 125, 0.8);
+    margin-top: 2px;
+    width: 790px;
+}
+
+#footer form {
+    margin-top: 2px;
+}
+
+#dhtmlgoodies_dragDropContainer { /* Main container for this script */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: #ffe8fb;
+    -moz-user-select: none;
+}
+
+#dhtmlgoodies_dragDropContainer ul { /* General rules for all <ul> */
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: 2px;
+}
+
+#dhtmlgoodies_dragDropContainer li, #dragContent li, li#indicateDestination { /* Movable items, i.e. <LI> */
+    list-style-type: none;
+
+    background-color: #ffe8fb;
+
+    padding: 2px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 15px;
+}
+.btn_container{
+    background-color: #ffe8fb;
+}
+li#indicateDestination { /* Box indicating where content will be dropped - i.e. the one you use if you don't use arrow */
+    border: 1px dotted #660000;
+    background-color: #FFF;
+}
+
+#dhtmlgoodies_dragDropContainer ul li.correctAnswer { /* Correctly moved item */
+    background-color: #3d8033;
+    color: #FFF;
+}
+
+#dhtmlgoodies_dragDropContainer ul li.wrongAnswer { /* Item moved to wrong box */
+    background-color: #ff7f70;
+    color: #FFF;
+}
+
+div#dhtmlgoodies_listOfItems { /* Left column "Available students" */
+
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 180px;
+}
+
+#dhtmlgoodies_listOfItems ul { /* Left(Sources) column <ul> */
+    height: 300px;
+
+}
+
+div#dhtmlgoodies_listOfItems div {
+    border: 1px solid #999;
+}
+
+div#dhtmlgoodies_listOfItems div ul { /* Left column <ul> */
+
+}
+
+#dhtmlgoodies_listOfItems div p { /* Heading above left column */
+
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: rgba(125, 125, 125, 0.8);
+    color: #FFF;
+
+}
+
+/* END LEFT COLUMN CSS */
+
+#dhtmlgoodies_dragDropContainer .mouseover { /* Mouse over effect DIV box in right column */
+    background-color: #E2EBED;
+    border: 1px solid rgba(125, 125, 125, 0.8);
+}
+
+/* Start main container CSS */
+
+
+
+#dhtmlgoodies_mainContainer div { /* Parent <div> of small boxes */
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    border: 1px solid #999;
+    width: /**/ 170px;
+
+}
+
+#dhtmlgoodies_mainContainer div ul {
+    margin-left: 10px;
+}
+
+#dhtmlgoodies_mainContainer div p { /* Heading above small boxes */
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: rgba(125, 125, 125, 0.8);
+    color: #FFF;
+
+}
+
+#dhtmlgoodies_mainContainer ul { /* Small box in right column ,i.e <ul> */
+    width: 152px;
+    min-height: 100px;
+    border: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+
+}
+
+#dragContent { /* Drag container */
+    position: absolute;
+    width: 150px;
+    height: 15px;
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    z-index: 2000;
+}
+
+#dragDropIndicator { /* DIV for the small arrow */
+    position: absolute;
+    width: 7px;
+    height: 10px;
+    display: none;
+    z-index: 1000;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #testSection, #testSection *{
+        visibility: visible;
+
+    }
+
+    #testSection{
+        position: absolute;
+
+        left: px;
+        top: 20px;
+        page-break-after: always;
+    }
+
+}

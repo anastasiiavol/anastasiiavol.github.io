@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestMe HTML</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/test-style.css">
+    <script src="js/test-script.js"></script>
+    <script src="js/drag-drop.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="build/quizlib.1.0.1.min.js"></script>
+</head>
+<body>
+<header>
+
+    <a href="index.html" class="logo">TestMe
+        <img src="img/cat.svg"></a>
+    <div class="header-right">
+        <a href="index.html">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
+</header>
+
+<div id="testSection" class="container">
+    <div id="quiz-result" class="card">
+        You Scored <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+    </div>
+
+
+    <div id="quiz" class="test_container">
+        <h2>HTML Test</h2>
+
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">1.What is HTML?</div>
+            <div class="quizlib-question-answers">
+                <input type="text" name="q1">
+            </div>
+        </div>
+
+
+
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">2. Choose the correct HTML element for the largest heading:</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="radio" name="q4" value="a"> &lth1&gt </label></li>
+                    <li><label><input type="radio" name="q4" value="b"> &lth6&gt</label></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">3. What is better to use with HTML?</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="checkbox" name="q7" value="a"> CSS</label></li>
+                    <li><label><input type="checkbox" name="q7" value="b"> JavaScript</label></li>
+                    <li><label><input type="checkbox" name="q7" value="c"> Assembly code</label></li>
+                    <li><label><input type="checkbox" name="q7" value="d"> C++</label></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Answer Button -->
+        <button type="button" onclick="showResults();">Check Answers</button> <br>
+
+
+    </div>
+
+
+
+
+<div id="dhtmlgoodies_dragDropContainer" class="container">
+
+    <div id="dhtmlgoodies_listOfItems">
+        <div>
+            <p>Data types</p>
+            <ul id="allItems">
+                <li id="node1" groupId="box1">null</li>
+                <li id="node2" groupId="box1">undefined</li>
+                <li id="node3" groupId="box1">boolean</li>
+                <li id="node4" groupId="box1">string</li>
+                <li id="node5" groupId="box1">number</li>
+                <li id="node6" groupId="box2">object</li>
+                <li id="node7" groupId="box1">symbol </li>
+                <li id="node8" groupId="box1">bigint </li>
+                <li id="node9" groupId="box3">char </li>
+                <li id="node10" groupId="box3">bool </li>
+                <li id="node11" groupId="box3">int </li>
+                <li id="node12" groupId="box3">float </li>
+                <li id="node13" groupId="box3">long long </li>
+                <li id="node14" groupId="box3">double </li>
+
+
+
+            </ul>
+        </div>
+    </div>
+    <div id="dhtmlgoodies_mainContainer">
+
+        <div>
+            <p>Primitive Data Types</p>
+            <ul id="box1">
+            </ul>
+        </div>
+        <div>
+            <p>Non-Primitive Types</p>
+            <ul id="box2"></ul>
+        </div>
+        <div>
+            <p>Does not exist in JS</p>
+            <ul id="box3">
+            </ul>
+        </div>
+
+
+
+    </div>
+
+</div>
+</div>
+<div class="container btn_container">
+<button type="button" onclick="print();">Print Test</button>
+</div>
+<ul id="dragContent"></ul>
+<div id="dragDropIndicator"></div>
+<div id="saveContent"></div>
+
+
+<footer>
+    <div class="footer__section">
+        <span>TestMe</span>
+        <span>© 2020 Volchanska Anastasia </span>
+    </div>
+
+</footer>
+</body>
+
+</html>
