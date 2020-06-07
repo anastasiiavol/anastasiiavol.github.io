@@ -1,35 +1,29 @@
-let boxSizeArray = [7,7,7,3,3,3,3];	// Array indicating how many items there is rooom for in the right column ULs
+let boxSizeArray = [7,7,7];
 
-let arrow_offsetX = -5;	// Offset X - position of small arrow
-let arrow_offsetY = 0;	// Offset Y - position of small arrow
+let arrow_offsetX = -5;
+let arrow_offsetY = 0;
 
-let arrow_offsetX_firefox = -6;	// Firefox - offset X small arrow
-let arrow_offsetY_firefox = -13; // Firefox - offset Y small arrow
+let arrow_offsetX_firefox = -6;
+let arrow_offsetY_firefox = -13;
 
-let verticalSpaceBetweenListItems = 3;	// Pixels space between one <li> and next
-// Same value or higher as margin bottom in CSS for #dhtmlgoodies_dragDropContainer ul li,#dragContent li
+let verticalSpaceBetweenListItems = 3;
+let initShuffleItems = true;
 
+let indicateDestionationByUseOfArrow = true;
 
-let initShuffleItems = true;	// Shuffle items before staring
+let lockedAfterDrag = true;
 
-let indicateDestionationByUseOfArrow = true;	// Display arrow to indicate where object will be dropped(false = use rectangle)
-
-
-let lockedAfterDrag = true;	/* Lock items after they have been dragged, i.e. the user get's only one shot for the correct answer */
-
-
-/* END VARIABLES YOU COULD MODIFY */
 
 let dragDropTopContainer = false;
 let dragTimer = -1;
 let dragContentObj = false;
-let contentToBeDragged = false;	// Reference to dragged <li>
-let contentToBeDragged_src = false;	// Reference to parent of <li> before drag started
-let contentToBeDragged_next = false; 	// Reference to next sibling of <li> to be dragged
-let destinationObj = false;	// Reference to <UL> or <LI> where element is dropped.
-let dragDropIndicator = false;	// Reference to small arrow indicating where items will be dropped
+let contentToBeDragged = false;
+let contentToBeDragged_src = false;
+let contentToBeDragged_next = false;
+let destinationObj = false;
+let dragDropIndicator = false;
 let ulPositionArray = new Array();
-let mouseoverObj = false;	// Reference to highlighted DIV
+let mouseoverObj = false;
 
 let MSIE = navigator.userAgent.indexOf('MSIE')>=0?true:false;
 let navigatorVersion = navigator.appVersion.replace(/.*?MSIE (\d\.\d).*/g,'$1')/1;
@@ -277,9 +271,7 @@ function dragDropEnd(e)
 
 }
 
-/*
-Preparing data to be saved
-*/
+
 function saveDragDropNodes()
 {
     let saveString = "";

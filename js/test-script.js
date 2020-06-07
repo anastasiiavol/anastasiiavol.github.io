@@ -3,7 +3,7 @@ let quiz;
 
 function showResults() {
     if (quiz.checkAnswers()) {
-        let quizScorePercent = quiz.result.scorePercentFormatted; // The unformatted percentage is a decimal in range 0 - 1
+        let quizScorePercent = quiz.result.scorePercentFormatted;
         let quizResultElement = document.getElementById('quiz-result');
         quizResultElement.style.display = 'block';
         document.getElementById('quiz-score').innerHTML = quiz.result.score.toString();
