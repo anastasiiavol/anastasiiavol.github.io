@@ -311,7 +311,7 @@ h1{
 .nextButton{
     margin: 20px auto;
 }
-input{
+.addQuestions input{
     margin: 20px auto;
     padding: 8px 10px;
     border: none;
@@ -330,7 +330,7 @@ input{
     #testSection{
         position: absolute;
 
-        left: px;
+        left: 10px;
         top: 20px;
         page-break-after: always;
     }
